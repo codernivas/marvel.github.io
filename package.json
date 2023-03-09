@@ -23,12 +23,15 @@
     "@types/node": "18.14.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "chart.js": "^4.2.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
     "d3": "^7.8.2",
     "dayjs": "^1.11.7",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-router": "^6.8.1",
@@ -46,6 +49,7 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
-    "eslint-plugin-storybook": "^0.6.11"
+    "eslint-plugin-storybook": "^0.6.11",
+    "faker": "^5.5.3"
   }
 }
