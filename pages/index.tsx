@@ -10,6 +10,7 @@ export default function Home() {
 
   return (
     <>
+    <h1>hiiiii</h1>
      <PricingPage/>
     
     </>
