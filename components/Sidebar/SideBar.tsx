@@ -1,9 +1,11 @@
+import {useContext} from "react"
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPeople } from "react-icons/bs";
 import { TiContacts } from "react-icons/ti";
 import Image from "next/image";
 import Link from "next/link";
-import { MdOutlineSpaceDashboard } from "react-icons/md";
+import { MdOutlineSpaceDashboard, MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { SidebarContext } from "./SidebarContext";
 
 const sidebarItems = [
   {
@@ -24,9 +26,15 @@ const sidebarItems = [
 ];
 
 export default function SideBar() {
+
+const {isCollapsedSidebar, toggleSidebarCollapsedHandler} = useContext(SidebarContext);
+
   return (
-    <div>
-      <aside className="sidebar">
+    <div className="sidebar_wrapper">
+      <button className="btn" onClick={toggleSidebarCollapsedHandler}>
+        <MdOutlineKeyboardArrowLeft/>
+      </button>
+      <aside className="sidebar" data-collapse={isCollapsedSidebar}>
         <div className="sidebar_top">
           <Image
             src="/movie_logo.png"
@@ -55,3 +63,6 @@ export default function SideBar() {
     </div>
   );
 }
+
+
+//21:41 https://www.youtube.com/watch?v=_ORPWeJFXwQ&list=LL&index=3
