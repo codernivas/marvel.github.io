@@ -5,13 +5,14 @@ import CustomButton from "@/components/ButtonCustom";
 import PricingPage from "@/Projects/PricingPage";
 import SideBar from "@/components/Sidebar/SideBar";
 import BaseLayout from "@/components/Sidebar/BasicLayout";
+import TestUser from "@/components/Test";
 
 export default function Home() {
 
 
   return (
     <BaseLayout>
-       home
+       <TestUser/>
     </BaseLayout>
   )
 }
